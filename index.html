@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style3.css">
+    
+</head>
+<body>
+    <div>
+        <ul class="nav nav-tabs" data-tabs="tabs" style="background-color: rgb(231, 192, 140);">
+            <li id="m1" idclass="active"><a href="#main" data-toggle="tab">Home</a></li>
+            <li id="m2"><a  href="#main2" data-toggle="tab">Every 3 hrs forecast</a></li>
+            <li id="m3"><a  href="#main3" data-toggle="tab">Air Quality</a></li>
+            <li style="margin-left: 18%;"><input type="text" class="msearch-bar" style="outline: none;" placeholder="City" >
+              <button type="submit" class="mbtn" ><i class="fa fa-search"></i></button></li>
+            
+        </ul>
+        <div class="tab-content">
+            <div id="main" class="tab-pane active fade in " style="margin-top: 20vh;">
+       
+                <input type="text" class="search-bar" style="outline: none;" placeholder="City" >
+                <button type="submit" class="btn" ><i class="fa fa-search" ></i></button>
+                <div class="mplace">Weather in Warangal</div>
+                <div class="mtemp"><b>28°C</b></div>
+                <div class="mpic">
+                 <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="micon" />
+                 <div class="mdescription">Cloudy</div>
+                 
+                </div>
+                <div class="mhumidity">Humidity : 60%</div>
+                <div class="mwind">Wind speed : 5.8km</div>
+            </div>
+            <div id="main2" class="tab-pane">
+                <div id="f1" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt1" class="dt">
+                      <div id="time1" class="time">time</div>
+                      <div id="date1" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic1" class="pic">
+                    <div id="temp1" class="temp">temp</div>
+                    <div id="feel1" class="feel">Realfeels</div>
+                    <div id="desc1" class="desc">desc</div>
+                    <div class="rain" id="rain1">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec1">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f2" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt2" class="dt">
+                      <div id="time2" class="time">time</div>
+                      <div id="date2" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic2" class="pic">
+                    <div id="temp2" class="temp">temp</div>
+                    <div id="feel2" class="feel">Realfeels</div>
+                    <div id="desc2" class="desc">desc</div>
+                    <div class="rain" id="rain2">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec2">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f3" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt3" class="dt">
+                      <div id="time3" class="time">time</div>
+                      <div id="date3" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic3" class="pic">
+                    <div id="temp3" class="temp">temp</div>
+                    <div id="feel3" class="feel">Realfeels</div>
+                    <div id="desc3" class="desc">desc</div>
+                    <div class="rain" id="rain3">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec3">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f4" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt4" class="dt">
+                      <div id="time4" class="time">time</div>
+                      <div id="date4" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic4" class="pic">
+                    <div id="temp4" class="temp">temp</div>
+                    <div id="feel4" class="feel">Realfeels</div>
+                    <div id="desc4" class="desc">desc</div>
+                    <div class="rain" id="rain4">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec4">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f5" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt5" class="dt">
+                      <div id="time5" class="time">time</div>
+                      <div id="date5" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic5" class="pic">
+                    <div id="temp5" class="temp">temp</div>
+                    <div id="feel5" class="feel">Realfeels</div>
+                    <div id="desc5" class="desc">desc</div>
+                    <div class="rain" id="rain5">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec5">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f6" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt6" class="dt">
+                      <div id="time6" class="time">time</div>
+                      <div id="date6" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic6" class="pic">
+                    <div id="temp6" class="temp">temp</div>
+                    <div id="feel6" class="feel">Realfeels</div>
+                    <div id="desc6" class="desc">desc</div>
+                    <div class="rain" id="rain6">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec6">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f7" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt7" class="dt">
+                      <div id="time7" class="time">time</div>
+                      <div id="date7" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic7" class="pic">
+                    <div id="temp7" class="temp">temp</div>
+                    <div id="feel7" class="feel">Realfeels</div>
+                    <div id="desc7" class="desc">desc</div>
+                    <div class="rain" id="rain7">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec7">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f8" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt8" class="dt">
+                      <div id="time8" class="time">time</div>
+                      <div id="date8" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic8" class="pic">
+                    <div id="temp8" class="temp">temp</div>
+                    <div id="feel8" class="feel">Realfeels</div>
+                    <div id="desc8" class="desc">desc</div>
+                    <div class="rain" id="rain8">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec8">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f9" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt9" class="dt">
+                      <div id="time9" class="time">time</div>
+                      <div id="date9" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic9" class="pic">
+                    <div id="temp9" class="temp">temp</div>
+                    <div id="feel9" class="feel">Realfeels</div>
+                    <div id="desc9" class="desc">desc</div>
+                    <div class="rain" id="rain9">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec9">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f10" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt10" class="dt">
+                      <div id="time10" class="time">time</div>
+                      <div id="date10" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic10" class="pic">
+                    <div id="temp10" class="temp">temp</div>
+                    <div id="feel10" class="feel">Realfeels</div>
+                    <div id="desc10" class="desc">desc</div>
+                    <div class="rain" id="rain10">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec10">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f11" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt11" class="dt">
+                      <div id="time11" class="time">time</div>
+                      <div id="date11" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic11" class="pic">
+                    <div id="temp11" class="temp">temp</div>
+                    <div id="feel11" class="feel">Realfeels</div>
+                    <div id="desc11" class="desc">desc</div>
+                    <div class="rain" id="rain11">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec11">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f12" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt12" class="dt">
+                      <div id="time12" class="time">time</div>
+                      <div id="date12" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic12" class="pic">
+                    <div id="temp12" class="temp">temp</div>
+                    <div id="feel12" class="feel">Realfeels</div>
+                    <div id="desc12" class="desc">desc</div>
+                    <div class="rain" id="rain12">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec12">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f13" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt13" class="dt">
+                      <div id="time13" class="time">time</div>
+                      <div id="date13" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic13" class="pic">
+                    <div id="temp13" class="temp">temp</div>
+                    <div id="feel13" class="feel">Realfeels</div>
+                    <div id="desc13" class="desc">desc</div>
+                    <div class="rain" id="rain13">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec13">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f14" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt14" class="dt">
+                      <div id="time14" class="time">time</div>
+                      <div id="date14" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic14" class="pic">
+                    <div id="temp14" class="temp">temp</div>
+                    <div id="feel14" class="feel">Realfeels</div>
+                    <div id="desc14" class="desc">desc</div>
+                    <div class="rain" id="rain14">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec14">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f15" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt15" class="dt">
+                      <div id="time15" class="time">time</div>
+                      <div id="date15" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic15" class="pic">
+                    <div id="temp15" class="temp">temp</div>
+                    <div id="feel15" class="feel">Realfeels</div>
+                    <div id="desc15" class="desc">desc</div>
+                    <div class="rain" id="rain15">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec15">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f16" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt16" class="dt">
+                      <div id="time16" class="time">time</div>
+                      <div id="date16" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic16" class="pic">
+                    <div id="temp16" class="temp">temp</div>
+                    <div id="feel16" class="feel">Realfeels</div>
+                    <div id="desc16" class="desc">desc</div>
+                    <div class="rain" id="rain16">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec16">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f17" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt17" class="dt">
+                      <div id="time17" class="time">time</div>
+                      <div id="date17" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic17" class="pic">
+                    <div id="temp17" class="temp">temp</div>
+                    <div id="feel17" class="feel">Realfeels</div>
+                    <div id="desc17" class="desc">desc</div>
+                    <div class="rain" id="rain17">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec17">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f18" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt18" class="dt">
+                      <div id="time18" class="time">time</div>
+                      <div id="date18" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic18" class="pic">
+                    <div id="temp18" class="temp">temp</div>
+                    <div id="feel18" class="feel">Realfeels</div>
+                    <div id="desc18" class="desc">desc</div>
+                    <div class="rain" id="rain18">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec18">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f19" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt19" class="dt">
+                      <div id="time19" class="time">time</div>
+                      <div id="date19" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic19" class="pic">
+                    <div id="temp19" class="temp">temp</div>
+                    <div id="feel19" class="feel">Realfeels</div>
+                    <div id="desc19" class="desc">desc</div>
+                    <div class="rain" id="rain19">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec19">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f20" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt20" class="dt">
+                      <div id="time20" class="time">time</div>
+                      <div id="date20" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic20" class="pic">
+                    <div id="temp20" class="temp">temp</div>
+                    <div id="feel20" class="feel">Realfeels</div>
+                    <div id="desc20" class="desc">desc</div>
+                    <div class="rain" id="rain20">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec20">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f21" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt21" class="dt">
+                      <div id="time21" class="time">time</div>
+                      <div id="date21" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic21" class="pic">
+                    <div id="temp21" class="temp">temp</div>
+                    <div id="feel21" class="feel">Realfeels</div>
+                    <div id="desc21" class="desc">desc</div>
+                    <div class="rain" id="rain21">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec21">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f22" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt22" class="dt">
+                      <div id="time22" class="time">time</div>
+                      <div id="date22" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic22" class="pic">
+                    <div id="temp22" class="temp">temp</div>
+                    <div id="feel22" class="feel">Realfeels</div>
+                    <div id="desc22" class="desc">desc</div>
+                    <div class="rain" id="rain22">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec22">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f23" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt23" class="dt">
+                      <div id="time23" class="time">time</div>
+                      <div id="date23" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic23" class="pic">
+                    <div id="temp23" class="temp">temp</div>
+                    <div id="feel23" class="feel">Realfeels</div>
+                    <div id="desc23" class="desc">desc</div>
+                    <div class="rain" id="rain23">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec23">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f24" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt24" class="dt">
+                      <div id="time24" class="time">time</div>
+                      <div id="date24" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic24" class="pic">
+                    <div id="temp24" class="temp">temp</div>
+                    <div id="feel24" class="feel">Realfeels</div>
+                    <div id="desc24" class="desc">desc</div>
+                    <div class="rain" id="rain24">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec24">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f25" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt25" class="dt">
+                      <div id="time25" class="time">time</div>
+                      <div id="date25" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic25" class="pic">
+                    <div id="temp25" class="temp">temp</div>
+                    <div id="feel25" class="feel">Realfeels</div>
+                    <div id="desc25" class="desc">desc</div>
+                    <div class="rain" id="rain25">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec25">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f26" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt26" class="dt">
+                      <div id="time26" class="time">time</div>
+                      <div id="date26" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic26" class="pic">
+                    <div id="temp26" class="temp">temp</div>
+                    <div id="feel26" class="feel">Realfeels</div>
+                    <div id="desc26" class="desc">desc</div>
+                    <div class="rain" id="rain26">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec26">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f27" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt27" class="dt">
+                      <div id="time27" class="time">time</div>
+                      <div id="date27" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic27" class="pic">
+                    <div id="temp27" class="temp">temp</div>
+                    <div id="feel27" class="feel">Realfeels</div>
+                    <div id="desc27" class="desc">desc</div>
+                    <div class="rain" id="rain27">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec27">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f28" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt28" class="dt">
+                      <div id="time28" class="time">time</div>
+                      <div id="date28" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic28" class="pic">
+                    <div id="temp28" class="temp">temp</div>
+                    <div id="feel28" class="feel">Realfeels</div>
+                    <div id="desc28" class="desc">desc</div>
+                    <div class="rain" id="rain28">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec28">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f29" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt29" class="dt">
+                      <div id="time29" class="time">time</div>
+                      <div id="date29" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic29" class="pic">
+                    <div id="temp29" class="temp">temp</div>
+                    <div id="feel29" class="feel">Realfeels</div>
+                    <div id="desc29" class="desc">desc</div>
+                    <div class="rain" id="rain29">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec29">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f30" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt30" class="dt">
+                      <div id="time30" class="time">time</div>
+                      <div id="date30" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic30" class="pic">
+                    <div id="temp30" class="temp">temp</div>
+                    <div id="feel30" class="feel">Realfeels</div>
+                    <div id="desc30" class="desc">desc</div>
+                    <div class="rain" id="rain30">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec30">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f31" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt31" class="dt">
+                      <div id="time31" class="time">time</div>
+                      <div id="date31" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic31" class="pic">
+                    <div id="temp31" class="temp">temp</div>
+                    <div id="feel31" class="feel">Realfeels</div>
+                    <div id="desc31" class="desc">desc</div>
+                    <div class="rain" id="rain31">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec31">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f32" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt32" class="dt">
+                      <div id="time32" class="time">time</div>
+                      <div id="date32" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic32" class="pic">
+                    <div id="temp32" class="temp">temp</div>
+                    <div id="feel32" class="feel">Realfeels</div>
+                    <div id="desc32" class="desc">desc</div>
+                    <div class="rain" id="rain32">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec32">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f33" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt33" class="dt">
+                      <div id="time33" class="time">time</div>
+                      <div id="date33" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic33" class="pic">
+                    <div id="temp33" class="temp">temp</div>
+                    <div id="feel33" class="feel">Realfeels</div>
+                    <div id="desc33" class="desc">desc</div>
+                    <div class="rain" id="rain33">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec33">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f34" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt34" class="dt">
+                      <div id="time34" class="time">time</div>
+                      <div id="date34" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic34" class="pic">
+                    <div id="temp34" class="temp">temp</div>
+                    <div id="feel34" class="feel">Realfeels</div>
+                    <div id="desc34" class="desc">desc</div>
+                    <div class="rain" id="rain34">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec34">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f35" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt35" class="dt">
+                      <div id="time35" class="time">time</div>
+                      <div id="date35" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic35" class="pic">
+                    <div id="temp35" class="temp">temp</div>
+                    <div id="feel35" class="feel">Realfeels</div>
+                    <div id="desc35" class="desc">desc</div>
+                    <div class="rain" id="rain35">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec35">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f36" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt36" class="dt">
+                      <div id="time36" class="time">time</div>
+                      <div id="date36" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic36" class="pic">
+                    <div id="temp36" class="temp">temp</div>
+                    <div id="feel36" class="feel">Realfeels</div>
+                    <div id="desc36" class="desc">desc</div>
+                    <div class="rain" id="rain36">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec36">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f37" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt37" class="dt">
+                      <div id="time37" class="time">time</div>
+                      <div id="date37" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic37" class="pic">
+                    <div id="temp37" class="temp">temp</div>
+                    <div id="feel37" class="feel">Realfeels</div>
+                    <div id="desc37" class="desc">desc</div>
+                    <div class="rain" id="rain37">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec37">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f38" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt38" class="dt">
+                      <div id="time38" class="time">time</div>
+                      <div id="date38" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic38" class="pic">
+                    <div id="temp38" class="temp">temp</div>
+                    <div id="feel38" class="feel">Realfeels</div>
+                    <div id="desc38" class="desc">desc</div>
+                    <div class="rain" id="rain38">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec38">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f39" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt39" class="dt">
+                      <div id="time39" class="time">time</div>
+                      <div id="date39" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic39" class="pic">
+                    <div id="temp39" class="temp">temp</div>
+                    <div id="feel39" class="feel">Realfeels</div>
+                    <div id="desc39" class="desc">desc</div>
+                    <div class="rain" id="rain39">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec39">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+                   <div id="f40" class="f" style="background-color: rgba(240, 138, 70, 0.8);">
+                    <div id="dt40" class="dt">
+                      <div id="time40" class="time">time</div>
+                      <div id="date40" class="date">date</div>
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png"  id="pic40" class="pic">
+                    <div id="temp40" class="temp">temp</div>
+                    <div id="feel40" class="feel">Realfeels</div>
+                    <div id="desc40" class="desc">desc</div>
+                    <div class="rain" id="rain40">
+                      <div class="drop"><img src="https://www.accuweather.com/images/components/weather/hourly-card-nfl/drop-icon.svg"></div>
+                      <div class="prec" id="prec40">0%</div>
+                    </div>
+                   </div>
+                   
+                   
+            </div>
+
+            <div id="main3" class="tab-pane">
+              
+
+              <div id="aqidiv">
+                <div id="aqi" class="quality">Air quality</div>
+                <div id="co" class="quality"></div>
+                <div id="no" class="quality"></div>
+                <div id="no2" class="quality"></div>
+                <div id="o3" class="quality"></div>
+                <div id="so2" class="quality"></div>
+                <div id="pm2_5" class="quality"></div>
+                <div id="pm10" class="quality"></div>
+                <div id="nh3" class="quality"></div>
+
+              </div>
+              
+              
+            </div>
+
+            
+            
+        </div>
+        
+    </div>
+</body>
+<script src="./script3.js"></script>
+</html>
